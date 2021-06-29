@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const statesRoute = require("./src/routes/states.js");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
@@ -21,4 +22,4 @@ app.get("/", (req, res) => {
   res.send("API Home");
 });
 
-app.listen(3000);
+app.listen(port);
