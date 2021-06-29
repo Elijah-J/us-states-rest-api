@@ -4,7 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-const statesRoute = require("./routes/states.js");
+const statesRoute = require("./src/routes/states.js");
 
 const app = express();
 
